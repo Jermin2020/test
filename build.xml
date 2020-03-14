@@ -8,7 +8,7 @@
 <property name="WORKSPACE" value="/var/lib/jenkins/workspace/test" />
 --> 
 
-<property name="jmeter.home" value="${WORKSPACE}/apache-jmeter-3.3" />
+<property name="jmeter.home" value="/test/apache-jmeter-3.3" />
 <!-- jmeter生成jtl格式的结果报告的路径--> 
 <property name="jmeter.result.jtl.dir" value="${WORKSPACE}/log" />
 <!-- jmeter生成html格式的结果报告的路径-->
