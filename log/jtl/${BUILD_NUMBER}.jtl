@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="290" it="0" lt="264" ct="153" ts="1584185754592" s="true" lb="QueryPlanSeatPrices场次区分接口" rc="200" rm="OK" tn="查询放映计划接口 1-1" dt="text" by="2779" sby="967" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <sample t="2" it="0" lt="0" ct="0" ts="1584185754880" s="true" lb="Debug PostProcessor" rc="200" rm="OK" tn="查询放映计划接口 1-1" dt="text" by="2061" sby="0" ng="0" na="0">
+    <responseData class="java.lang.String">SamplerProperties:
+HTTPSampler.DO_MULTIPART_POST=false
+HTTPSampler.auto_redirects=false
+HTTPSampler.connect_timeout=
+HTTPSampler.contentEncoding=
+HTTPSampler.domain=
+HTTPSampler.embedded_url_re=
+HTTPSampler.follow_redirects=true
+HTTPSampler.header_manager=org.apache.jmeter.protocol.http.control.HeaderManager@612413
+HTTPSampler.method=POST
+HTTPSampler.path=http://predaditspws.oristarcloud.com/services/tsp/cinema?wsdl
+HTTPSampler.port=
+HTTPSampler.postBodyRaw=true
+HTTPSampler.protocol=
+HTTPSampler.response_timeout=
+HTTPSampler.use_keepalive=true
+HTTPsampler.Arguments==&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:soap=&quot;http://soap.ws.tsp.oristartech.com/&quot;&gt;&#xd;
+   &lt;soapenv:Header/&gt;&#xd;
+   &lt;soapenv:Body&gt;&#xd;
+      &lt;soap:QueryPlanSeatPrices&gt;&#xd;
+         &lt;!--Optional:--&gt;&#xd;
+         &lt;pAppCode&gt;MOVIE365&lt;/pAppCode&gt;&#xd;
+         &lt;!--Optional:--&gt;&#xd;
+         &lt;pCinemaCode&gt;10300002&lt;/pCinemaCode&gt;&#xd;
+         &lt;!--Optional:--&gt;&#xd;
+         &lt;pPlanStartDate&gt;2020-03-14&lt;/pPlanStartDate&gt;&#xd;
+         &lt;!--Optional:--&gt;&#xd;
+         &lt;pPlanEndDate&gt;2020-03-14&lt;/pPlanEndDate&gt;&#xd;
+         &lt;!--Optional:--&gt;&#xd;
+         &lt;pCompress&gt;0&lt;/pCompress&gt;&#xd;
+         &lt;!--Optional:--&gt;&#xd;
+         &lt;pVerifyInfo&gt;a8fbd75a3291205560eeb56a93faeaf2&lt;/pVerifyInfo&gt;&#xd;
+      &lt;/soap:QueryPlanSeatPrices&gt;&#xd;
+   &lt;/soapenv:Body&gt;&#xd;
+&lt;/soapenv:Envelope&gt;()
+TestElement.enabled=true
+TestElement.gui_class=org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui
+TestElement.name=QueryPlanSeatPrices场次区分接口
+TestElement.test_class=org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy
+
+JMeterVariables:
+=a8fbd75a3291205560eeb56a93faeaf2
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@1d0c8c8
+START.HMS=043553
+START.MS=1584185753424
+START.YMD=20200314
+TESTSTART.MS=1584185753956
+URL=http://predaditspws.oristarcloud.com/services/tsp/cinema?wsdl
+__jmeter.USER_TOKEN__=查询放映计划接口 1-1
+duanyan=0
+pAppCode=MOVIE365
+pCinemaCode=10300002
+pCompress=0
+pPlanEndDate=2020-03-14
+pPlanStartDate=2020-03-14
+password=c2b687ec6e8ca1f00f2f532742672a55
+
+</responseData>
+  </sample>
+  <responseData class="java.lang.String">&lt;soap:Envelope xmlns:soap=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;soap:Body&gt;&lt;ns2:QueryPlanSeatPricesResponse xmlns:ns2=&quot;http://soap.ws.tsp.oristartech.com/&quot;&gt;&lt;return&gt;&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&amp;gt;
+&amp;lt;QueryPlanSeatPricesResult xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&amp;gt;
+   &amp;lt;ResultCode&amp;gt;0&amp;lt;/ResultCode&amp;gt;
+   &amp;lt;Message&amp;gt;成功&amp;lt;/Message&amp;gt;
+   &amp;lt;CinemaPlans/&amp;gt;
+&amp;lt;/QueryPlanSeatPricesResult&amp;gt;&lt;/return&gt;&lt;/ns2:QueryPlanSeatPricesResponse&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;</responseData>
+</httpSample>
+<httpSample t="75" it="0" lt="74" ct="0" ts="1584185754909" s="true" lb="QueryPlanInfoAndSeatLevelPrice查询放映计划信息和座" rc="200" rm="OK" tn="查询放映计划接口 1-1" dt="text" by="2867" sby="989" ng="1" na="1">
+  <assertionResult>
+    <name>响应断言</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <sample t="1" it="0" lt="0" ct="0" ts="1584185754983" s="true" lb="Debug PostProcessor" rc="200" rm="OK" tn="查询放映计划接口 1-1" dt="text" by="2105" sby="0" ng="0" na="0">
+    <responseData class="java.lang.String">SamplerProperties:
+HTTPSampler.DO_MULTIPART_POST=false
+HTTPSampler.auto_redirects=false
+HTTPSampler.connect_timeout=
+HTTPSampler.contentEncoding=
+HTTPSampler.domain=
+HTTPSampler.embedded_url_re=
+HTTPSampler.follow_redirects=true
+HTTPSampler.header_manager=org.apache.jmeter.protocol.http.control.HeaderManager@612413
+HTTPSampler.method=POST
+HTTPSampler.path=http://predaditspws.oristarcloud.com/services/tsp/cinema?wsdl
+HTTPSampler.port=
+HTTPSampler.postBodyRaw=true
+HTTPSampler.protocol=
+HTTPSampler.response_timeout=
+HTTPSampler.use_keepalive=true
+HTTPsampler.Arguments==&lt;soapenv:Envelope xmlns:soapenv=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot; xmlns:soap=&quot;http://soap.ws.tsp.oristartech.com/&quot;&gt;&#xd;
+   &lt;soapenv:Header/&gt;&#xd;
+   &lt;soapenv:Body&gt;&#xd;
+      &lt;soap:QueryPlanInfoAndSeatLevelPrice&gt;&#xd;
+         &lt;!--Optional:--&gt;&#xd;
+         &lt;pAppCode&gt;MOVIE365&lt;/pAppCode&gt;&#xd;
+         &lt;!--Optional:--&gt;&#xd;
+         &lt;pCinemaCode&gt;10300002&lt;/pCinemaCode&gt;&#xd;
+         &lt;!--Optional:--&gt;&#xd;
+         &lt;pPlanStartDate&gt;2020-03-14&lt;/pPlanStartDate&gt;&#xd;
+         &lt;!--Optional:--&gt;&#xd;
+         &lt;pPlanEndDate&gt;2020-03-14&lt;/pPlanEndDate&gt;&#xd;
+         &lt;!--Optional:--&gt;&#xd;
+         &lt;pCompress&gt;0&lt;/pCompress&gt;&#xd;
+         &lt;!--Optional:--&gt;&#xd;
+         &lt;pVerifyInfo&gt;a8fbd75a3291205560eeb56a93faeaf2&lt;/pVerifyInfo&gt;&#xd;
+      &lt;/soap:QueryPlanInfoAndSeatLevelPrice&gt;&#xd;
+   &lt;/soapenv:Body&gt;&#xd;
+&lt;/soapenv:Envelope&gt;()
+TestElement.enabled=true
+TestElement.gui_class=org.apache.jmeter.protocol.http.control.gui.HttpTestSampleGui
+TestElement.name=QueryPlanInfoAndSeatLevelPrice查询放映计划信息和座
+TestElement.test_class=org.apache.jmeter.protocol.http.sampler.HTTPSamplerProxy
+
+JMeterVariables:
+=a8fbd75a3291205560eeb56a93faeaf2
+JMeterThread.last_sample_ok=true
+JMeterThread.pack=org.apache.jmeter.threads.SamplePackage@6bb3aa
+START.HMS=043553
+START.MS=1584185753424
+START.YMD=20200314
+TESTSTART.MS=1584185753956
+URL=http://predaditspws.oristarcloud.com/services/tsp/cinema?wsdl
+__jmeter.USER_TOKEN__=查询放映计划接口 1-1
+duanyan=0
+pAppCode=MOVIE365
+pCinemaCode=10300002
+pCompress=0
+pPlanEndDate=2020-03-14
+pPlanStartDate=2020-03-14
+password=c2b687ec6e8ca1f00f2f532742672a55
+
+</responseData>
+  </sample>
+  <responseData class="java.lang.String">&lt;soap:Envelope xmlns:soap=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;&lt;soap:Body&gt;&lt;ns2:QueryPlanInfoAndSeatLevelPriceResponse xmlns:ns2=&quot;http://soap.ws.tsp.oristartech.com/&quot;&gt;&lt;return&gt;&amp;lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&amp;gt;
+&amp;lt;QueryPlanInfoAndSeatLevelPriceResult xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&amp;gt;
+   &amp;lt;ResultCode&amp;gt;0&amp;lt;/ResultCode&amp;gt;
+   &amp;lt;Message&amp;gt;成功&amp;lt;/Message&amp;gt;
+   &amp;lt;CinemaPlans/&amp;gt;
+&amp;lt;/QueryPlanInfoAndSeatLevelPriceResult&amp;gt;&lt;/return&gt;&lt;/ns2:QueryPlanInfoAndSeatLevelPriceResponse&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;</responseData>
+</httpSample>
+
+</testResults>
